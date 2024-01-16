@@ -1,0 +1,11 @@
+{
+  "name": "form-validation",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Alexandros Karagiannis",
+  "license": "ISC",
+  "workspaces": [
+    "packages/password",
+    "examples/simple-example"
+  ]
+}
