@@ -4,13 +4,22 @@ import path from "path";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
-  plugins: [dts(), react()],
+  plugins: [dts({ rollupTypes: true }), react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "index.tsx"),
-      name: "PasswordForm",
+      entry: path.resolve(__dirname, "./src/index.tsx"),
+      name: "passwordForm",
+      fileName: "passwordForm",
       formats: ["es", "cjs"],
-      fileName: (format) => `passwordForm.${format}.js`,
+    },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+      output: {
+        globals: {
+          react: "React",
+          "react-dom": "React-dom",
+        },
+      },
     },
   },
 });

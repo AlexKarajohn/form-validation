@@ -1,1 +1,1 @@
-export * from "./components/index";
+export { PasswordForm } from "./components/index";

@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Minimal Example with Typescript and Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a basic React application created with Vite, showcasing the usage of the 'akaragiannis-password-form-validation' library.
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To use the library in your project, follow these steps:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+In your code, import the `PasswordForm` component from the library:
+
+```typescript
+import { PasswordForm } from "akaragiannis-password-form-validation";
+```
+
+## Development
+
+If you are working on the development of the library itself, follow these steps:
+
+```bash
+npm install
+npm run dev
+```
+
+In your code, import the `PasswordForm` component from the local development version:
+
+```typescript
+import { PasswordForm } from "@form-validation/password";
+```

@@ -1,1 +1,1 @@
-export * from "./PasswordForm/PasswordForm";
+export { PasswordForm } from "./PasswordForm/PasswordForm";

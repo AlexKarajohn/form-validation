@@ -1,7 +1,7 @@
 {
   "name": "form-validation",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "author": "Alexandros Karagiannis",
   "license": "ISC",
   "workspaces": [

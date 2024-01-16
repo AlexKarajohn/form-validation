@@ -4,10 +4,10 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grow from "@mui/material/Grow";
-import { useFormik } from "formik";
 import { useState } from "react";
 import { VisibilityToggle } from "./components/VisibilityToggle/VisibilityToggle";
 import { validationSchema } from "./utils/validation";
+import { useFormik } from "formik";
 
 export const PasswordForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -38,8 +38,8 @@ export const PasswordForm = () => {
       <Box
         width="100%"
         display="flex"
-        alignItems={"center"}
-        justifyContent={"center"}
+        alignItems="center"
+        justifyContent="center"
       >
         <Typography variant="body1">Submitted!</Typography>
         <CheckCircleIcon fontSize="large" color="success" />
@@ -49,8 +49,8 @@ export const PasswordForm = () => {
     <Box
       component="form"
       display="flex"
-      flexDirection={"column"}
-      alignItems={"center"}
+      flexDirection="column"
+      alignItems="center"
       padding={1}
       gap={1}
       onSubmit={formik.handleSubmit}

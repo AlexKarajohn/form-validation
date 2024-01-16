@@ -1,13 +1,25 @@
 {
-  "name": "@form-validation/password",
-  "private": true,
-  "version": "0.0.0",
+  "name": "akaragiannis-password-form-validation",
+  "private": false,
+  "version": "0.0.0-dev",
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "cl": "npm run commitlint",
-    "deploy": "npm run semantic-release"
+    "deploy": "npx semantic-release --access public",
+    "deploy:dry": "npx semantic-release -d"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/passwordForm.cjs",
+  "module": "./dist/passwordForm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/passwordForm.js",
+      "require": "./dist/passwordForm.cjs"
+    }
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -69,19 +81,11 @@
       "@semantic-release/npm",
       "@semantic-release/git"
     ],
-    "npmPublish": true,
     "publish": [
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            {
-              "path": "dist/*"
-            }
-          ]
-        }
-      ]
+      "@semantic-release/github",
+      "@semantic-release/npm"
     ],
+    "npmPublish": true,
     "success": [],
     "fail": [],
     "plugins": [
@@ -99,7 +103,7 @@
           "assets": [
             "CHANGELOG.md",
             "package.json",
-            "yarn.lock"
+            "package-lock.json"
           ],
           "message": "chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
         }
