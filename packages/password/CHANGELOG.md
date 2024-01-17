@@ -1,3 +1,10 @@
+# 1.0.0 (2024-01-17)
+
+
+### Features
+
+* initial commit ([3b3a579](https://github.com/AlexKarajohn/form-validation/commit/3b3a57973dcb6fdf8a27b1d1bb24b7c9a92e8613))
+
 ## [1.10.1](https://github.com/AlexKarajohn/form-validation/compare/v1.10.0...v1.10.1) (2024-01-16)
 
 

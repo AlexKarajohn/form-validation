@@ -1,7 +1,7 @@
 {
   "name": "akaragiannis-password-form-validation",
   "private": false,
-  "version": "0.0.0-dev",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
