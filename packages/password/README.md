@@ -14,8 +14,6 @@ In response to the needs of an assessment project, I developed this library to f
 - At least 1 special character (!@#$%^&\*()\_-+={[}]|:;"'<,>.)
 - Submit button triggering validation and presenting success or reasons for password entry failure
 
-## Requirements
-
 ### Task:
 
 1. Implement a password entry library in React.
@@ -28,6 +26,10 @@ React: 16.7.0+
 Typescript: 5.0.0+
 
 Works both on Javascript & Typescript React projects.
+
+## Requirements
+
+Prerequisites: 'react' & 'react-dom'
 
 ## Installation
 
@@ -45,7 +47,7 @@ Import the component from the npm package
 import { PasswordForm } from "akaragiannis-password-form-validation";
 ```
 
-In your functional component's return statement, include
+In your JSX/TSX, include
 
 ```typescript
 <PasswordForm />
@@ -54,6 +56,8 @@ In your functional component's return statement, include
 This component does not accept any props as it is designed to be simple and easy to use.
 
 ## Examples
+
+Feel free to view in [CodeSandBox](https://codesandbox.io/p/sandbox/akaragiannis-password-form-validation-ny8g65) or
 
 1. Clone the repository.
 2. Install dependencies using `npm install`.
