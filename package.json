@@ -6,6 +6,7 @@
   "license": "ISC",
   "workspaces": [
     "packages/password",
-    "examples/simple-example-typescript"
+    "examples/simple-example-typescript",
+    "examples/simple-example-javascript"
   ]
 }
