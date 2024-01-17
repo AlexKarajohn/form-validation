@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AlexKarajohn/form-validation/compare/v1.0.0...v1.1.0) (2024-01-17)
+
+
+### Features
+
+* **js:** added js example ([541d6a1](https://github.com/AlexKarajohn/form-validation/commit/541d6a1c05a6831e33ae4f88f43c6e3ef80ba544))
+
 # 1.0.0 (2024-01-17)
 
 
