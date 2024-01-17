@@ -1,5 +1,9 @@
 import * as yup from "yup";
 
+/**
+ * yup object creating a validation schema to be used by the useFormik hook to validate the password strength, as well as that the two passwords match.
+ * see more {@link https://www.npmjs.com/package/yup}.
+ */
 export const validationSchema = yup.object({
   password: yup
     .string()

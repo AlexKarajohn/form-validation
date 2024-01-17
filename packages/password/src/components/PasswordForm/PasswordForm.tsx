@@ -9,11 +9,24 @@ import { VisibilityToggle } from "./components/VisibilityToggle/VisibilityToggle
 import { validationSchema } from "./utils/validation";
 import { useFormik } from "formik";
 
+/**
+Generates a password form including a submit button. Upon submission, the entered passwords
+are validated against the specified validation schema {@link validationSchema}. If the passwords
+meet the validation criteria, a success message is displayed; otherwise, error messages
+are shown for each input.
+*/
 export const PasswordForm = () => {
+  //Boolean value that is used to show the password as text or asterisks.
   const [showPassword, setShowPassword] = useState(false);
+  //Boolean value that is used to show the confirm password as text or asterisks.
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  //Boolean value that handles the rendering of the mock success case.
   const [showSuccess, setShowSuccess] = useState(false);
 
+  /**
+   * useFormik hook, used to handle state management, validation and the submit event.\
+   * see more [here](https://formik.org/docs/examples/with-material-ui)
+   */
   const formik = useFormik({
     initialValues: {
       password: "",
@@ -96,7 +109,6 @@ export const PasswordForm = () => {
           ),
         }}
       />
-
       <Button variant="contained" type="submit" disabled={showSuccess}>
         Submit
       </Button>
