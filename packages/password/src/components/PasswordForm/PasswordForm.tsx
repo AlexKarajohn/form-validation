@@ -71,6 +71,7 @@ export const PasswordForm = () => {
       <TextField
         id="password"
         label="Password"
+        name="Password"
         fullWidth
         disabled={showSuccess}
         value={formik.values.password}
@@ -87,6 +88,7 @@ export const PasswordForm = () => {
       <TextField
         id="confirmPassword"
         label="Confirm Password"
+        name="Confirm Password"
         fullWidth
         disabled={showSuccess}
         value={formik.values.confirmPassword}

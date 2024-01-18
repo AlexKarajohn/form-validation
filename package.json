@@ -8,5 +8,8 @@
     "packages/password",
     "examples/simple-example-typescript",
     "examples/simple-example-javascript"
-  ]
+  ],
+  "devDependencies": {
+    "@testing-library/react": "^14.1.2"
+  }
 }

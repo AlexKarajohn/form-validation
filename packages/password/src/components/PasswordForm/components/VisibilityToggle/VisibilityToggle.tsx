@@ -3,6 +3,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import { Dispatch, FC, SetStateAction } from "react";
+import { testIds } from "./constants/testIds";
 
 interface VisibilityToggleProps {
   /**
@@ -33,7 +34,11 @@ export const VisibilityToggle: FC<VisibilityToggleProps> = ({
         onClick={handleClickShowPassword}
         edge="end"
       >
-        {value ? <VisibilityOff /> : <Visibility />}
+        {value ? (
+          <VisibilityOff data-testid={testIds.visibilityOff} />
+        ) : (
+          <Visibility data-testid={testIds.visibility} />
+        )}
       </IconButton>
     </InputAdornment>
   );
